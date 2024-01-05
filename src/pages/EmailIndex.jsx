@@ -42,12 +42,12 @@ export function EmailIndex() {
     if (!emails){
         return <div>Loading...</div>
     }
-    const { subject } = filterBy
+    const { subject,isRead } = filterBy
     //console.log ("Render")
     return (
         <section className="emails-index">
             <h1>Emails index</h1>
-            <EmailFilter filterBy={{ subject }} onSetFilter={onSetFilter} />
+            <EmailFilter filterBy={{ subject,isRead }} onSetFilter={onSetFilter} />
             <EmailList emails={emails} onRemoveEmail={onRemoveEmail} />
         </section>
     )
