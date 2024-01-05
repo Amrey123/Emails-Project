@@ -29,7 +29,7 @@ export function EmailFilter ({filterBy, onSetFilter}) {
             <label htmlFor="isRead">Status</label>
             <select onChange={handleChange} id="isRead" value={isRead} name="isRead" type="status">
                 <option value="">All</option>
-                <option value={true}>Read</option>
+                <option value="true">Read</option>
                 <option value="false">Unread</option>
             </select>
         </form>
