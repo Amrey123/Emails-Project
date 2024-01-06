@@ -5,6 +5,7 @@ export const utilService = {
     loadFromStorage
 }
 
+//This function creates an id by random values 
 function makeId(length = 5) {
     var text = "";
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -18,6 +19,7 @@ function saveToStorage(key, value) {
     localStorage[key] = JSON.stringify(value);
 }
 
+//This function loads a parsed value from the storage
 function loadFromStorage(key, defaultValue = null) {
     var value = localStorage[key] || defaultValue;
     return JSON.parse(value);

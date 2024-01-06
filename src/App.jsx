@@ -8,7 +8,7 @@ import { AppHeader } from './assets/cmps/AppHeader'
 import { EmailIndex } from './pages/EmailIndex'
 import {EmailDetails} from './pages/EmailDetails'
 
-
+//This comp will be holding the differnt pages avaialble in the app and allow the user to move between them using the Route ability. 
 export function App() {
 
     return (

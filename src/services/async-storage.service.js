@@ -1,3 +1,5 @@
+//This list of function will handle all the relevant function for the async stroage actions
+
 export const storageService = {
     query,
     get,

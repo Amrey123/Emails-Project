@@ -1,9 +1,9 @@
-
+// This function will show the footer
 export function AppFooter() {
     return (
         <footer>
             <section className="container">
-                robotRights 2023 &copy;
+                emailRightAmit 2024 &copy;
             </section>
         </footer>
     )

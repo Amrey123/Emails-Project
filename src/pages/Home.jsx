@@ -1,20 +1,8 @@
 import imgUrl from '../assets/imgs/react.png';
 import { emailService } from '../services/email.service.js';
 
+//This comp manages the home page. it is creating the initial list of email and show a welcoming message to the user 
 export function Home() {
-  // const email = emailService.createEmail(
-  //   'id',
-  //   'Email subject',
-  //   'Email body',
-  //   'isRead value',
-  //   'isStarred value',
-  //   'sentAt value',
-  //   'removedAt value',
-  //   'from value',
-  //   'to value'
-  // );
-
-  //console.log(email); // You can log the created email to see the result
 
   emailService._createEmails() 
 
